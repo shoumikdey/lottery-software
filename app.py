@@ -19,7 +19,7 @@ def file_up():
         print(filename)
         df = pd.read_excel(file)
         df.to_csv('lottery.csv', encoding='utf-8', index=False)
-
+        
         print(request.form['hindi'], request.form['bengali'])
         return send_file('lottery.csv',  as_attachment=True)
 
