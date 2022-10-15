@@ -7,7 +7,9 @@ bengali_arr = np.array(['2004062', '2004063', '2004064', '2004065', '2004066', '
 
 
 def lottery_maker(hindi_num=3, bengali_num=3):
-    print(sample(list(hindi_arr), hindi_num), 'hindi')
-    print(sample(list(bengali_arr), bengali_num), 'bengali')
-    
+    hindi_lottery = sample(list(hindi_arr), hindi_num)
+    bengali_lottery = sample(list(bengali_arr), bengali_num)
+    print(hindi_lottery, 'hindi')
+    print(bengali_lottery, 'bengali')
+    print(len(hindi_lottery) == len(set(hindi_lottery)))
 lottery_maker()
