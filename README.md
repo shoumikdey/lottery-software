@@ -1,0 +1,1 @@
+A software that can be used by schools to select and reject candidates based on lottery
